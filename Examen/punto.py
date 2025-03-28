@@ -21,3 +21,8 @@ class Punto:
         elif self.x > 0 and self.y < 0:
             return "Estas en el cuadrante 4"   
         
+        def diferencia(self, otro):
+            return math.sqrt((self.x - otro.x)**2 + (self.y - otro.y)**2)
+        
+        def distancia(self, otro):
+            return math.sqrt((self.x - otro.x)**2 + (self.y - otro.y)**2)
