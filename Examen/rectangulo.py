@@ -1,3 +1,5 @@
+from punto import Punto
+
 class Rectangulo:
     def __init__(self, coord1=Punto(), coord2=Punto()):
         self.coord1 = coord1
