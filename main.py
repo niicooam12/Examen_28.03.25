@@ -1,3 +1,7 @@
 from Examen.lanzador import Lanzador
 
-Lanzador()  # Ejecuta todo automáticamente
+def main():
+    lanzador = Lanzador()
+
+if __name__ == "__main__":
+    main()

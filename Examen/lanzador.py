@@ -52,6 +52,3 @@ class Lanzador:
         self.mostrar_ubicaciones()
         self.calcular_distancias()
         self.crear_rectangulo()
-
-if __name__ == "__main__":
-    Lanzador()  # Instancia la clase y ejecuta todo
