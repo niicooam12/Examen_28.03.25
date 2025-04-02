@@ -1,4 +1,4 @@
-from punto import Punto
+from Examen.punto import Punto
 
 class Rectangulo:
     def __init__(self, coord1=Punto(), coord2=Punto()):

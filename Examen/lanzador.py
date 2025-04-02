@@ -3,10 +3,14 @@ from Examen.rectangulo import Rectangulo
 
 class Lanzador:
     def __init__(self):
+        """Inicializa los puntos y ejecuta las funciones automáticamente."""
         self.p1 = Punto(2, 3)
         self.p2 = Punto(5, 5)
         self.p3 = Punto(-3, -1)
         self.p4 = Punto(0, 0)
+
+        # Ejecutar automáticamente las funciones al instanciar
+        self.ejecutar()
 
     def mostrar_coordenadas(self):
         print("Coordenadas de los puntos:")
@@ -41,3 +45,13 @@ class Lanzador:
         print(f"Base: {rectangulo.calcular_base()}")
         print(f"Altura: {rectangulo.calcular_altura()}")    
         print(f"Área: {rectangulo.calcular_area()}")
+
+    def ejecutar(self):
+        """Ejecuta todas las funciones automáticamente al instanciar la clase."""
+        self.mostrar_coordenadas()
+        self.mostrar_ubicaciones()
+        self.calcular_distancias()
+        self.crear_rectangulo()
+
+if __name__ == "__main__":
+    Lanzador()  # Instancia la clase y ejecuta todo
